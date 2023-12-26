@@ -20,7 +20,7 @@ START_PIC = os.environ.get("START_PIC", "")
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1166670205').split()]
 
-Bot_Username = "@Rename_robotbot"
+Bot_Username = "@FileRenamesRobot"
 
 PORT = os.environ.get('PORT', '8080')
 
