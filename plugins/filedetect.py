@@ -10,8 +10,7 @@ async def refunc(client, message):
        await message.delete() 
        msg = await client.get_messages(message.chat.id, reply_message.id)
        file = msg.reply_to_message
-       media_type = file.media.value
-       media = getattr(file, media_type)
+       media = getattr(file, file.media.value)
        if not "." in new_name:
           if "." in media.file_name:
               extn = media.file_name.rsplit('.', 1)[-1]
